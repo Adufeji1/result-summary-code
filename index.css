@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.review-leftside {
+    background-color: rgb(62, 60, 184);
+    height: 600px;
+    border-radius: 25px;
+    color: white;
+}
+
+.result {
+    text-align: center;
+    color: rgb(247, 243, 235);
+    font-size: 25px;
+    margin-top: 70px;
+}
+
+.leftside-review-circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: linear-gradient(rgb(26, 26, 77), rgb(68, 66, 176));
+    position: absolute;
+    left: 220px;
+    margin-top: 40px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.leftside-review-circle:hover {
+    background-color: rgb(12, 11, 46);
+    animation: rotate 5s linear infinite;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(odeg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.seventy-six {
+    color: white;
+    /* color: white; */
+    font-size: 90px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.of100 {
+    text-align: center;
+    opacity: 0.2;
+}
+
+.review-great-texts {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 170px;
+    width: 280px;
+}
+
+.great {
+    font-size: 30px;
+    text-align: center;
+}
+
+.great-paragraph {
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+
+
+/* right side of the styling */
+.review-rightside {
+    background-color: rgb(247, 243, 235);
+    height: 600px;
+    border-radius: 25px;
+}
+
+.rightside-wrapper {
+    margin-left: 70px;
+}
+
+.summary {
+    margin-top: 70px;
+    font-size: 30px;
+    color: rgb(51, 49, 130);
+    margin-left: 20px;
+}
+
+
+/* reaction styling */
+.reaction {
+    background-color: rgb(242, 224, 227);
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.reaction-icon {
+    margin-left: 15px;
+    color: rgb(134, 43, 128);
+
+}
+
+.reaction-text {
+    margin-left: 15px;
+    color: rgb(134, 43, 128);
+}
+
+.rating {
+    position: absolute;
+    right: 59px;
+    color: rgb(51, 49, 130);
+}
+
+/* memory styling */
+.memory {
+    background-color: rgb(234, 232, 222);
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.reaction-icon-two {
+    margin-left: 15px;
+    color: rgb(225, 190, 14);   
+}
+
+.reaction-text-two {
+    margin-left: 15px;
+    color: rgb(225, 190, 14); 
+} 
+
+
+/* verbal styling */
+.verbal {
+    background-color: rgb(220, 231, 232);
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.reaction-icon-three {
+    margin-left: 15px;
+    color: rgb(58, 205, 215);
+
+}
+
+.reaction-text-three {
+    margin-left: 15px;
+    color: rgb(58, 205, 215);
+
+}
+
+.rating {
+    position: absolute;
+    right: 59px;
+    color: rgb(51, 49, 130);
+}
+
+
+/* visual styling */
+.visual {
+    background-color: rgb(229, 228, 239);
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.reaction-icon-four {
+    margin-left: 15px;
+    color: rgb(51, 49, 130);
+
+}
+
+.reaction-text-four {
+    margin-left: 15px;
+    color: rgb(51, 49, 130);
+
+}
+
+.rating {
+    position: absolute;
+    right: 59px;
+    color: rgb(51, 49, 130);
+}
+
+/* button */
+.review-btn {
+    width: 500px;
+    height: 50px;
+    background-color: rgb(12, 11, 46);
+    color: white;
+    margin-left: 20px;
+    margin-top: 25px;
+    border-radius: 30px;
+    transition: background-color 3s ease;
+}
+
+.review-btn:hover {
+    background-color: white;
+    color: rgb(51, 49, 130);
+}
+
+
+@media (max-width: 350px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .review-rightside {
+        border-radius: none;
+    }
+}
