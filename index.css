@@ -241,13 +241,61 @@ body {
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 600px) {
     body {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .review-rightside {
-        border-radius: none;
+        border-radius: 0;
+    }
+
+    .leftside-review-circle {
+        height: auto;
+        width: 200px;
+        left: 140x;
+        position: absolute;
+        margin-top: 40px;
+    }
+
+
+    .review-great-texts {
+        margin-top: 20px;
+        text-align: center;
+        position: absolute;
+        left: 170px;
+    }
+
+    .great {
+        font-size: 30px;
+    }
+
+    .rightside-wrapper {
+        margin-left: 0;
+     }
+
+    .reaction,
+    .memory,
+    .verbal,
+    .visual {
+        width: 600px;
+        flex-direction: column;
+    }
+    .reaction-icon,
+    .reaction-text,
+    .reaction-icon-two,
+    .reaction-text-two,
+    .reaction-icon-three,
+    .reaction-text-three,
+    .reaction-icon-four,
+    .reaction-text-four {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+    .review-btn {
+        width: 400px;
+        margin-left: 50px;
     }
 }
